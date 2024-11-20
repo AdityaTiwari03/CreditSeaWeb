@@ -31,7 +31,7 @@ const useFetchLoans = () => {
     const fetchLoans = async () => {
       try {
         const response = await fetch(
-          `https://credit-sea-beige.vercel.app/loans/summary`
+          `https://aoushadhi.in/loans/summary`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch loans");

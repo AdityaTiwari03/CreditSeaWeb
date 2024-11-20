@@ -14,8 +14,10 @@ app.use(express.json());
 
 // CORS configuration
 const allowedOrigins = [
-  "http://localhost:3000", // Allow local development
-  "https://credit-sea-3t24.vercel.app", // Allow your deployed frontend
+  // "http://localhost:3000", // Allow local development
+  // "https://credit-sea-3t24.vercel.app",
+  "https://credit-sea-web.vercel.app"
+   // Allow your deployed frontend
 ];
 
 // CORS options

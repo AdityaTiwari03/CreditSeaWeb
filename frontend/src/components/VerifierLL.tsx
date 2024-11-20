@@ -18,7 +18,7 @@ const LoanList: React.FC = () => {
     const fetchLoans = async () => {
       try {
         const response = await fetch(
-          `https://credit-sea-beige.vercel.app/loans/?role=${"verifier"}`
+          `https://aoushadhi.in/loans/?role=${"verifier"}`
         );
         // console.log(response)
         if (!response.ok) {

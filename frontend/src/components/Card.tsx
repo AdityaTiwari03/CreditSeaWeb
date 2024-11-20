@@ -62,8 +62,8 @@ const LoanCard: React.FC<LoanCardProps> = ({ loan, actions, role }) => {
     try {
       const url =
         role === "verifier"
-          ? `https://credit-sea-beige.vercel.app/loans/status-verifier?_id=${loan.id}`
-          : `https://credit-sea-beige.vercel.app/loans/status-admin?_id=${loan.id}`;
+          ? `https://aoushadhi.in/loans/status-verifier?_id=${loan.id}`
+          : `https://aoushadhi.in/loans/status-admin?_id=${loan.id}`;
       const payload =
         role === "verifier"
           ? { status: newStatus, loanOfficer: "Jon Okoh" }

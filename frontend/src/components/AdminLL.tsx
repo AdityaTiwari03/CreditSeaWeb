@@ -20,7 +20,7 @@ const LoanList: React.FC = () => {
     (async function loadLoans() {
       try {
         const response = await fetch(
-          `https://credit-sea-beige.vercel.app/loans/?role=${"admin"}`
+          `https://aoushadhi.in/loans/?role=${"admin"}`
         );
         if (!response.ok) throw new Error("Could not fetch loan data");
 

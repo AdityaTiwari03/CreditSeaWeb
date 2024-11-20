@@ -44,7 +44,7 @@ const App: React.FC = () => {
 
     // Make an API call on form submission
     const idNumber = 12140090; // Make sure idNumber is present in formData
-    const apiUrl = `https://credit-sea-beige.vercel.app/loans?idNumber=${idNumber}`;
+    const apiUrl = `https://aoushadhi.in/loans?idNumber=${idNumber}`;
     try {
       const response = await fetch(apiUrl, {
         method: "POST",

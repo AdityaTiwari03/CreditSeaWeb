@@ -22,7 +22,7 @@ const LoanList: React.FC = () => {
     async function loadLoans() {
       try {
         const response = await fetch(
-          `https://credit-sea-beige.vercel.app/loans/id?idNumber=${12140090}`
+          `https://aoushadhi.in/loans/id?idNumber=${12140090}`
         );
 
         if (!response.ok) {
