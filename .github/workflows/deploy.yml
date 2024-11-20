@@ -16,13 +16,13 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 18
+        node-version: 20
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build project
-      run: npm run build
+    - name: Install dependencies and build project (Backend)
+      run: |
+        cd backend
+        npm install
+        npm run build
 
     - name: Set up SSH
       uses: webfactory/ssh-agent@v0.5.3
@@ -32,7 +32,7 @@ jobs:
     - name: Deploy to EC2
       run: |
         ssh -o StrictHostKeyChecking=no ubuntu@13.60.2.56 << 'EOF'
-          cd backend
+          cd /home/ubuntu/CreditSeaWeb/backend
           git pull origin main
           npm install
           npm run build
