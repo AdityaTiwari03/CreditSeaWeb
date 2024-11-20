@@ -103,7 +103,7 @@ app.get(
       let loans;
 
       // Check the role and fetch data accordingly
-      if (role === "verifier") {
+      if (role === "verifierr") {
         // For verifier: Get loans where status is "PENDING" or "VERIFIED"
         loans = await Loan.find({ status: { $in: ["PENDING", "VERIFIED"] } });
       } else if (role === "admin") {
